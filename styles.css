@@ -1,0 +1,165 @@
+body{
+  background-color: #d7fbe8;
+  font-family: 'Sriracha';
+}
+
+.container{
+  margin: 4rem;
+  width: 20rem;
+  height: 30rem;
+  background-color: #9df3c4;
+  position: absolute;
+  left: 20%;
+  border-radius: 5%;
+  text-align: center;
+
+}
+
+.containerPlaylist{
+  width: 20rem;
+  height: 30rem;
+  background-color: #9df3c4;
+  position: absolute;
+  right: 15%;
+  margin: 4rem;
+  border-radius: 5%;
+  overflow-y: scroll;
+}
+
+.containerPlaylist::-webkit-scrollbar {
+    display: none;
+}
+
+.trackImage{
+height: 200px;
+width: 225px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20%;
+margin-bottom: 20%;
+border-radius: 12px;
+text-align: center;
+}
+
+#songTitle{
+  width: 250px;
+  position: absolute;
+  top: 60%;
+  left: 12%;
+  line-height: 1rem;
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+#trackLength{
+  width: 250px;
+  height: 5px;
+  background-color: gray;
+  display: flex;
+  border-radius: 50px;
+  margin-left: 35px;
+}
+
+#fill{
+  height: 5px;
+  background-color: royalblue;
+  border-radius: 20px;
+
+}
+
+#handle{
+  width: 8px;
+  height: 8px;
+  background-color: royalblue;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 2px;
+  margin-bottom: -5px;
+  transform: scale(2);
+}
+
+.buttons{
+  padding: 15px;
+}
+
+.btn {
+  border: none;
+  color: white;
+  padding: 13px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 6px 4px;
+  cursor:pointer;
+  color: #323232;
+  border-radius: 12px;
+}
+.btns {
+  border: none;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 6px 2px;
+  cursor:pointer;
+  color: #323232;
+  border-radius: 12px;
+}
+
+.btn:hover {
+  background-color: #4CAF50;
+}
+
+.btns:hover {
+  background-color: #4CAF50;
+}
+
+
+.playlist {
+  width: 100px;
+  height:100px;
+  margin-left: 6.5rem;
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+  border-radius: 10px;
+  cursor:pointer;
+
+}
+
+.button{
+  width: 100px;
+  height:100px;
+  background-color: ;
+  background-repeat:no-repeat;
+  border: none;
+  cursor:pointer;
+  outline:none;
+}
+
+.trackname{
+  text-align: center;
+}
+
+h3{
+  font-size: 1.5rem;
+}
+
+.seperation{
+  width:225px;
+  height: 1px;
+  background-color: gray;
+  border-radius: 10px;
+  margin-left: 50px;
+}
+
+
+@media (max-width:1200px) {
+  .containerPlaylist{
+    position: absolute;
+    top: 500px;
+    left: 20%;
+  }
+}

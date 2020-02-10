@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Music-Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/e3f8119cdd.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Sriracha&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="imageContainer">
+
+        <img class="trackImage" src="images/img2.jpg" alt="Track image">
+
+      </div>
+
+      <div id="songTitle"><p>Demo Track</p></div>
+
+      <div id="trackLength">
+        <div id="fill"></div>
+        <div id="handle"></div>
+      </div>
+
+      <div class="buttons">
+
+
+        <button class="btn" type="button" name="skipBack" onclick="previous()"><i class="fas fa-step-backward"></i></button>
+        <button class="btn" type="button" name="Play/Pause" onclick="playOrPauseSong()"><i class="fas fa-play"></i></button>
+        <button class="btn" type="button" name="skipForward" onclick="next()"><i class="fas fa-step-forward"></i></button>
+        <div class="funcbtn">
+          <button class="btns" type="button" name="shuffle"><i class="fas fa-random"></i></button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="containerPlaylist">
+      <img class="playlist" src="" alt="Track-list" name="1" onclick="selectedSong(this.name)"><p class="trackname 1">song-1</p>
+      <div class="seperation"></div>
+      <img class="playlist" src="" alt="Track-list" name="2" onclick="selectedSong(this.name)"><p class="trackname 2">song-2</p>
+      <div class="seperation"></div>
+      <img class="playlist" src="" alt="Track-list"name="3" onclick="selectedSong(this.name)"><p class="trackname 3">song3</p>
+      <div class="seperation"></div>
+      <img class="playlist" src="" alt="Track-list"name="4" onclick="selectedSong(this.name)"><p class="trackname 4">song4</p>
+      <div class="seperation"></div>
+      <img class="playlist" src="" alt="Track-list"name="5" onclick="selectedSong(this.name)"><p class="trackname 5">song-5</p>
+      <div class="seperation"></div>
+      <img class="playlist" src="" alt="Track-list"name="6" onclick="selectedSong(this.name)"><p class="trackname 6">song-6</p>
+      <div class="seperation"></div>
+      <img class="playlist" src="" alt="Track-list"name="7" onclick="selectedSong(this.name)"><p class="trackname 7">song-7</p>
+      <div class="seperation"></div>
+      <img class="playlist" src="" alt="Track-list"name="8" onclick="selectedSong(this.name)"><p class="trackname 8">song-8</p>
+      <div class="seperation"></div>
+      <img class="playlist" src="" alt="Track-list"name="0" onclick="selectedSong(this.name)"><p class="trackname 9">song-9</p>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="app.js" charset="utf-8"></script>
+
+  </body>
+</html>
